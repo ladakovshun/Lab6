@@ -1,0 +1,10 @@
+﻿@page
+@model WebApplication5.Views.User.ConfirmOrderModel
+@{
+    <form asp-action="ConfirmOrder" method="post">
+        <label>How many products would you like to order?</label>
+        <input name="quantity" type="number" min="1" required />
+        <input type="submit" value="Confirm" />
+    </form>
+
+}
